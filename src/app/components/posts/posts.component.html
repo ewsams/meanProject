@@ -1,0 +1,13 @@
+<div *ngIf="!loaded">
+    <p>
+        Loading...
+    </p>
+</div>
+<div *ngIf="loaded" class="p-3">
+    <ul *ngFor="let post of posts">
+        <li>
+            {{post.title}}<br>
+            {{post.content}}
+        </li>
+    </ul>
+</div>

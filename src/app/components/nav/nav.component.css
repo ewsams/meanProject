@@ -1,0 +1,8 @@
+a{
+   cursor: pointer;
+}
+
+a:hover{
+   background-color: rgb(104, 228, 215);
+   border-radius: 1rem 2rem;
+}
