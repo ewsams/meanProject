@@ -45,7 +45,7 @@ app.get('/api/posts', (req, res, next) => {
 app.post('/api/posts', (req, res, next) => {
     const post = req.body;
     console.log(post);
-    req.status(201).json({
+    res.status(201).json({
         message: 'Post added'
     });
 });

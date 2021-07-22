@@ -6,7 +6,8 @@
             <label for="postContent" class="m-2">Content</label>
             <textarea rows="4" #postContent></textarea>
             <div class="col-2 mx-auto">
-                <button type="submit" class="btn btn-success m-2" (click)="submitPost(postTitle,postContent)">
+                <button type="submit" class="btn btn-success m-2"
+                    (click)="submitPost(postTitle.value,postContent.value)">
                     Submit</button>
             </div>
         </div>
