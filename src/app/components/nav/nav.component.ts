@@ -24,5 +24,4 @@ export class NavComponent implements OnInit {
   createPostsNav = () => {
     this.router.navigate(['posts']);
   }
-
 }
