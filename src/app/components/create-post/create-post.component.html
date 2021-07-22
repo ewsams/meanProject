@@ -1,0 +1,14 @@
+<div class="container p-5">
+    <div class="row justify-content-center">
+        <div class="col-2">
+            <label for="postTitle" class="m-2">Title</label>
+            <input type="text" #postTitle />
+            <label for="postContent" class="m-2">Content</label>
+            <textarea rows="4" #postContent></textarea>
+            <div class="col-2 mx-auto">
+                <button type="submit" class="btn btn-success m-2" (click)="submitPost(postTitle,postContent)">
+                    Submit</button>
+            </div>
+        </div>
+    </div>
+</div>
