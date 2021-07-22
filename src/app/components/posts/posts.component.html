@@ -1,13 +1,15 @@
-<div *ngIf="!loaded">
-    <p>
-        Loading...
-    </p>
-</div>
-<div *ngIf="loaded" class="p-3">
-    <ul *ngFor="let post of posts">
-        <li>
-            {{post.title}}<br>
-            {{post.content}}
-        </li>
-    </ul>
+<div class="container p-3">
+    <div *ngIf="loaded" class="row justify-content-center">
+        <div class="card m-2" *ngFor="let post of posts" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">{{post.title}}</h5>
+                <p class="card-text text-center">{{post.content}}</p>
+                <div class="row justify-content-center">
+                    <span class="btn btn-sm btn-primary m-1">Edit Post</span>
+                    <span class="btn btn-sm btn-danger m-1">Delete Post</span>
+                    <span class="btn btn-sm btn-info m-1"><i class="far fa-thumbs-up mr-1"></i>Like Post</span>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

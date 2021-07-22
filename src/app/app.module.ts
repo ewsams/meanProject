@@ -11,12 +11,14 @@ import { PostsComponent } from './components/posts/posts.component';
 // Services
 import { PostsService } from './services/posts.service';
 import { NavComponent } from './components/nav/nav.component';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PostsComponent,
-    NavComponent
+    NavComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

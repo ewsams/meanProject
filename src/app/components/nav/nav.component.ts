@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-nav',
@@ -7,9 +8,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
+  }
+
+  homeNav = () => {
+    this.router.navigate(['home']);
+  }
+
+  postsNav = () => {
+    this.router.navigate(['posts']);
+  }
+
+  createPostsNav = () => {
+    this.router.navigate(['posts']);
   }
 
 }
